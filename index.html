@@ -1,0 +1,212 @@
+<div class="container">
+  <header class="header">
+    <h1 id="title" class="text-center">Apple: Survey Form</h1>
+    <p id="description" class="description text-center">
+      Thank you very much for taking out the time to fill the form.
+    </p>
+  </header>
+  
+<form id="survey-form">
+  <div class="form-group">
+    <label id="name-label" for="name">Name</label>
+    <input
+           type="text"
+           name="name"
+           id="name"
+           class="form-control"
+           placeholder="Enter your Name"
+           required
+           />
+  </div>
+  
+  <div class="form-group">
+    <label id="email-label" for="email">Email</label>
+    <input
+           type="email"
+           name="email"
+           id="email"
+           class="form-control"
+           placeholder="Enter your Email"
+           required
+           />
+  </div>
+  
+  <div class="form-group">
+    <label id="number-label" for="number"
+           >Age<span class="clue"> (Optional)</span></label>
+    <input
+           type="number"
+           name="age"
+           id="number"
+           min="13"
+           max="100"
+           class="form-control"
+           placeholder="Enter your Age"
+           />
+      </div>
+    
+    <div class="form-group">
+      <p>Which model iPhone are you currently using?</p>
+      <select
+              id="dropdown"
+              name="model"
+              class="form-control"
+              required>
+    
+    <option disabled selected value>Select current phone</option>
+    <option value="iphone11">iPhone 11 Series</option>
+    <option value="iphoneXs">iPhone Xs Series</option>
+    <option value="iphoneX">iPhone X</option>
+    <option value="iphone8">iPhone 8 Series</option>
+    <option value="iphone7">iPhone 7 Series</option>
+    <option value="iphone Se">iPhone SE Series</option>
+    <option value="iphone6S">iPhone 6s Series</option>
+    <option value="iphone6">iPhone 6 or Older</option>
+      </select>
+  </div>
+   
+  <div class="form-group">
+    <p>How do you rate using an iPhone?</p>
+    <label>
+      <input
+             name="userRecommend"
+             value="loveIt"
+             type="radio"
+             class="input-radio"
+             checked
+             />I love it
+    </label>
+    
+    <label>
+      <input
+             name="userRecommend"
+             value="noIssues"
+             type="radio"
+             class="input-radio"
+             />I have no issues with it
+    </label>
+    
+    <label>
+      <input
+             name="userRecommend"
+             value="notInterested"
+             type="radio"
+             class="input-radio"
+             />I like Android better
+    </label>
+    </div>
+    
+    <div class="form-group">
+      <p>What is your most favourite iPhone features?
+      </p>
+      <select
+              id="most-like"
+              name="mostLike"
+              class="form-control"
+              required>
+    
+      <option disabled selected value>Select an option</option>
+      <option value="privacy">Privacy</option>
+      <option value="design">Design</option>
+      <option value="software">Software</option>
+      <option value="support">Customer Support</option>
+      </select>
+    </div>
+    
+    <div class="form-group">
+      <p>
+        What other Apple products/services do you currently use?
+        <span class="clue">(Check all items which apply)</span>
+      </p>
+    
+    <label>
+      <input
+             name="owned"
+             value="macbook"
+             type="checkbox"
+             class="input-checkbox"
+             />Macbook</label>
+    <label>
+      <input
+             name="owned"
+             value="apple-watch"
+             type="checkbox"
+             class="input-checkbox"
+             />Apple Watch</label>
+    <label>
+      <input
+             name="owned"
+             value="imac"
+             type="checkbox"
+             class="input-checkbox"
+             />iMac</label>
+    <label>
+      <input
+             name="owned"
+             value="ipod"
+             type="checkbox"
+             class="input-checkbox"
+             />iPod</label>
+    <label>
+      <input
+             name="owned"
+             value="airpods"
+             type="checkbox"
+             class="input-checkbox"
+             />Airpods</label>
+    <label>
+      <input
+             name="owned"
+             value="homepod"
+             type="checkbox"
+             class="input-checkbox"
+             />Homepod</label>
+    <label>
+      <input
+             name="owned"
+             value="apple-tv"
+             type="checkbox"
+             class="input-checkbox"
+             />Apple TV</label>
+    <label>
+      <input
+             name="owned"
+             value="apple-music"
+             type="checkbox"
+             class="input-checkbox"
+             />Apple Music</label>
+             <label>
+      <input
+             name="owned"
+             value="apple-arcade"
+             type="checkbox"
+             class="input-checkbox"
+             />Apple Arcade</label>
+    <label>
+      <input
+             name="owned"
+             value="appletv+"
+             type="checkbox"
+             class="input-checkbox"
+             />Apple TV+</label>
+  </div>
+      
+         <div class="form-group">
+           <p>Any comments or suggestions?</p>
+           <textarea
+                     id="comments"
+                     class="input-textarea"
+                     name="comment"
+                     placeholder="Enter your comment here"
+                     ></textarea>
+    </div>
+    
+    <div class="form-group">
+      <button 
+              type="submit"
+              id="submit"
+              class="submit-button"
+              >Submit</button>
+    </div>
+    </form>
+  </div>
